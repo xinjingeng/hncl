@@ -1,0 +1,25 @@
+/* *****************背景图公共样式*************** */
+.banner {
+    height: 320px;
+    background-color: #ecf0f1;
+    background: url('../images/timg_10.jpg') center center no-repeat;
+    background-size: cover;
+   
+}
+
+.banner .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.banner .h-line {
+    display: block;
+    width: 32px;
+    height: 3px;
+    margin: 14px auto 16px;
+    background-color: #faaf40;
+}

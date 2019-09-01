@@ -1,0 +1,52 @@
+.commercial-terms{
+    padding: 80px 0 0 0;
+}
+
+.ct-title{
+    padding: 20px 0;
+    border-bottom: 1px dashed #000;
+}
+.ct-content{
+    padding: 20px 0;
+}
+
+.ct-content .ct-content-top{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.ct-content .ct-content-bottom{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.ct-content .ct-content-text{
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px
+}
+
+
+/* ******************* 隐私支持 ********************* */
+.privacy-policy{
+    padding: 80px 0;
+    /* background-color: #ecf0f1; */
+}
+
+.pp-title{
+    padding: 20px 0;
+    border-bottom: 1px dashed #000;
+}
+
+.pp-content>h5{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.pp-content>div{
+    font-size: 12px;
+    color: #888;
+}

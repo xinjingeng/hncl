@@ -1,0 +1,73 @@
+/*****************************尾部-start*******************************/
+#lk_footer{
+    width: 100%;
+    background: url("../images/ft_bg.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    padding: 40px 0;
+    color: #fff;
+    font-size: 16px;
+}
+#lk_footer .footer-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#lk_footer .footer-box{
+    display: flex;
+}
+#lk_footer .footer-box ul{
+    list-style: none;
+    flex: 1;
+}
+
+#lk_footer .footer-box .footer-select{
+    padding-bottom: 30px;
+    margin-top: 16px;
+}
+
+
+#lk-footer .footer-box .footer-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#lk_footer ul li a{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+/* 风险警告 */
+.rike{
+    background-color: rgb(21, 21, 21);
+    padding: 70px 0;
+}
+.rike h5{
+    color: #fff;
+    margin-bottom:30px;
+}
+.rike p{
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.rike .text{
+    text-indent: 2rem;
+}
+@media screen and (max-width:768px){
+    .rike{
+        background-color: #fff;
+        padding: 0 0;
+    }
+    .rike h5{
+        color: #000;
+    }
+    .rike p{
+        color: rgb(102, 102, 102);
+    }
+}
+/*****************************尾部-end*******************************/

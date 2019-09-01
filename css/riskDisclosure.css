@@ -1,0 +1,41 @@
+/* **************出金入金******************** */
+.risk-disclosure{
+    padding: 80px 0;
+}
+
+.rd-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rd-title>p{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0 40px 0;
+}
+
+.rd-content{
+    padding: 40px 0;
+    border-top: 1px dashed #000;
+    font-size: 12px;
+    color: #888;
+}
+.rd-content>p:nth-child(1){
+    color: #000;
+    font-size: 14px;
+}
+
+.rd-btn{
+    margin-top: 20px;
+}
+
+@media screen and (max-width:768px){
+    .rd-btn-box{
+        display: flex;
+        justify-content: center; 
+    }
+    .rd-btn{
+        margin-top: 20px;
+    }
+}

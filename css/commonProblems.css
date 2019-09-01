@@ -1,0 +1,92 @@
+/* **************常见问题******************** */
+.common-problems{
+    padding: 80px 0;
+    /* border-bottom: 1px solid #000; */
+}
+
+.cp-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cp-title>p{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0 40px 0;
+}
+
+.cp-info{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cp-info>i{
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.num{
+    color: #eb4956;
+    font-size: 20px;
+    font-weight: 800;
+}
+.text{
+    font-size: 20px;
+}
+@media screen and (min-width:768px){
+    .advantage-item{
+        padding: 40px;
+        margin: 10px 0;
+        background-color: #ecf0f1;
+        display: flex;
+    }
+    .advantage-item .left{
+       display: flex;
+       align-items: center;
+        /* justify-content: center; */
+    }
+    .advantage-item .left>i{
+        font-size: 70px;
+        color: #eb4956;
+    }
+    .advantage-item .right{
+        height: 70px;
+        padding: 0 40px;
+    }
+    
+    .advantage-item .right p{
+        font-size: 14px;
+        margin-top: 15px;
+        text-indent: 2rem;
+        color: #888;
+    } 
+}
+
+@media screen and (max-width:768px){
+    .advantage-item{
+        margin: 10px 0;
+        
+    }
+    .advantage-item .left{
+       display: flex;
+       align-items: center;
+    
+    }
+    .advantage-item .right{
+        background-color: #ecf0f1;
+        padding: 10px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .advantage-item .right p{
+        font-size: 12px;
+        margin-top: 15px;
+        text-indent: 2rem;
+        color: #888;
+    } 
+}

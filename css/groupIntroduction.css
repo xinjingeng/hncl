@@ -1,0 +1,131 @@
+.group-introduction {
+    padding: 70px 0;
+}
+
+.gi-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gi-title .gi-title-text {
+    font-weight: 500;
+    margin: 10px 0 50px 0;
+}
+
+
+/* 集团简介 */
+
+.gi-introduction {
+    padding-bottom: 38px;
+    border-bottom: 1px dashed #000;
+}
+
+@media screen and (min-width:768px) {
+    .gi-introduction {
+        display: flex;
+    }
+    .gi-introduction .content {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        padding: 0 0 10px 10px;
+    }
+}
+
+.gi-introduction .img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gi-introduction .content>div {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.gi-introduction .content>p {
+    font-size: 12px;
+    line-height: 20px;
+    text-indent: 1rem;
+    margin-top: 20px;
+}
+
+
+/* 集团发展 */
+
+.gi-development {
+    padding: 30px 0 38px 0;
+    border-bottom: 1px dashed #000;
+}
+
+.gi-development>h6 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.gi-development>p {
+    font-size: 12px;
+    line-height: 20px;
+    text-indent: 1rem;
+    margin-top: 20px;
+}
+
+
+/* 集团管理 */
+
+.gi-manage {
+    width: 100%;
+    padding: 30px 0 38px 0;
+}
+
+.gi-manage>h6 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.gi-manage>p {
+    font-size: 12px;
+    line-height: 20px;
+    text-indent: 1rem;
+    margin: 20px 0 30px 0;
+}
+.gi-manage .manage-content>div img{
+    border-radius:50%;
+}
+
+@media screen and (min-width:768px) {
+    .gi-manage .manage-content {
+        display: flex;
+    }
+    .gi-manage .manage-content>div {
+        padding: 16px 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        border-radius: 10px;
+        color: #000;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gi-manage .manage-content {
+        margin: 0 auto;
+    }
+    .gi-manage .manage-content>div {
+        padding: 46px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: #000;
+    }
+}

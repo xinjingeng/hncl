@@ -1,0 +1,41 @@
+.fund-security{
+    padding: 70px 0;
+}
+
+.fs-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fs-title>p{
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.fs-items .fs-items-img{
+    width: 100%;
+    height: 150px;
+    background-color:#ecf0f1;;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.fs-items .fs-items-img>img{
+    height: 50px;
+}
+
+.fs-items .fs-items-text{
+    padding: 45px 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.fs-items-img>i{
+    font-size: 70px;
+    color: #eb4956;
+}

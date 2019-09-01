@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/css/animate.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/phoneTitle.css">
+    <link rel="stylesheet" href="./css/customerSupport.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>宏牛策略</title>
+
+  <script>
+        window.jQuery || document.write('<script src="./lib/js/jquery-3.3.1.js"><\/script>')
+    </script>
+</head>
+
+<body>
+    <!-- 面板弹出框 -->
+    <section id="pop_up" style="display: none">
+        <div class="panel-shadow" id="panel_shadow"></div>
+        <div class="panel">
+            <div class="panel-top">
+                <div class="panel-title">请扫描二维码下载APP操作</div>
+                <div class="panel-img">
+                    <img id="panel_img" src="./images/download.png" alt="" width="200">
+                </div>
+            </div>
+            <div class="panel-bottom">
+                <div class="panel-btn" id="panel_btn">确定</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 弹出面板脚本 -->
+    <script>
+        $(function () {
+            $('#registered').click(function () {
+                $('#panel_img').attr('src','./images/download.png');
+                $('#pop_up').show();
+            });
+            $('#registered_1').click(function () {
+                $('#panel_img').attr('src','./images/download.png');
+                $('#pop_up').show();
+            });
+            $('#panel_shadow').click(function () {
+                $('#pop_up').hide();
+            });
+            $('#panel_btn').click(function () {
+                $('#pop_up').hide();
+            });
+            $('#iPhone').click(function(){
+                $('#panel_img').attr('src','./images/logo.png');
+                $('#pop_up').show();
+            });
+            $('#Android').click(function(){
+                $('#panel_img').attr('src','./images/logo.png');
+                $('#pop_up').show();
+            })
+        })
+    </script>
+    <!---------------------- 头部 ----------------------->
+    <header>
+        <!-- 上部分：登录注册 -->
+        <section class="d-none d-sm-none d-md-none d-lg-block mt-2 border-bottom">
+            <div class="container">
+                <div class="row text-left">
+                    <div class="col-md-6 pt-1">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+                        <span>ngoctu4864@gmail.com（服务时间：08:45 - 18:00）</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a id="registered" href="javascript:" class="btn btn-primary mr-2 mb-1">免费注册</a>
+                        <a href=" https://user.mailgo.com.cn/web/login" class="text-muted">立即登录</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下部分：导航条 -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-lk">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src= "./images/logo.png" alt="" style="width: 60%">
+                </a>
+
+                <button class="nav-btn navbar-toggler nav-link" type="button" data-toggle="collapse"
+                    data-target="#lk_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- </div> -->
+                <div class="collapse navbar-collapse" id="lk_nav">
+                    <ul class="nav-content-items navbar-nav mr-auto">
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./index.html">首页</a>
+                        </li>
+                        <li class="click-items nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                关于我们
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./groupIntroduction.html">集团介绍</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./FundSecurity.html">资金安全</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./tradingModel.html">STP交易模型</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./PolicyStatement.html">政策申明</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./ourAdvantage.html">我们的优势</a>
+                            </div>
+                        </li>
+                        <li class="click-items nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                在线交易
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="./commonProblems.html">常见问题</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./TradingInstructions.html">交易须知</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./TheGoldInGold.html">出入金方式</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./RiskDisclosure.html">风险披露</a>
+                            </div>
+                        </li>
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./standardUser.html">账户种类</a>
+                        </li>
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./TradingTools.html">交易工具</a>
+                        </li>
+                        <li class="click-items nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                客户支持
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="./customerSupport.html">商业条款</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./PrivacyPolicy.html">隐私政策</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---------------------- 头部 ----------------------->
+
+    <!--------------------- 主要内容 -------------------->
+    <!-- 图片标题 -->
+    <section>
+        <div class="banner">
+            <div class="text">
+                <h3>客户支持</h3>
+                <i class="h-line"></i>
+                <p style="text-align: center;">宏牛策略的使命是始终把客户置于首位，并提供始终如一的服务质量。我们的多语言支持团队每周一至周五8点至24点始终在这守护您</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 隐私政策 -->
+    <section class="privacy-policy">
+        <div class="container">
+            <div class="pp-title">
+                <h3>
+                    隐私政策
+                </h3>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="pp-content">
+                <h5 class="wow animated bounceInLeft" data-wow-offset='300'>保证金产品交易会给您的资产带来高风险，您的损失可能超过您的初始投资金额。 请您在注册账户之前，仔细阅读我们的隐私政策。</h5>
+                <div>
+                    <p class="config-text">a. 您完全理解您将向我们提供您的个人信息，用于注册账户、账户管理和账户维护。</p>
+                    <p class="config-text">b. 宏牛策略（宏牛策略）的所有员工对于客户信息保密都接受过全面培训。</p>
+                    <p class="config-text">c. 我们获取客户信息的主要渠道来源于客户本身，但我们也保留从其他途径获取信息的权利，比如信用评级机构、选民注册名录、反欺诈机构等。</p>
+                    <p class="config-text">d. 我们把所有个人信息都尽可能保存在基于存储设备功能的安全电脑中。若不能储存在电脑中，我们会以安全的纸质文档的方式进行保存。任何未经授权人员不能获取这些存储资料。</p>
+                    <p class="config-text">e. 我们承诺不会将您的个人信息出售或转交给任何第三方机构，但是与我们公司业务正常运营有关的机构除外。这些机构包括信用卡处理和验证中心、执法机构、金融或其他监管机构、审计及合规部门（如果您，或者您的公司，是受香港监管），以及与我们签订协议的代理商等。</p>
+                    <p class="config-text">f. 若我们能为您提供其他服务，您的信息可能被转交给隶属于宏牛策略 Global Solutions Limited的其他子公司。</p>
+                    <p class="config-text">g. 我们会借助谷歌分析的广告功能收集我们网站访问用户的地理位置信息。若您不希望谷歌访问您的地理位置信息，您可以随时联系谷歌进行取消设置。</p>
+                    <p class="config-text">h. 我们可能向其他相关保证金产品交易公司提供一些个人信息，但任何敞口头寸信息除外。</p>
+                    <p class="config-text">i. 我们可能使用已经获得的信息，通过直接或间接的营销方式，为客户或潜在客户介绍新产品或提供更优质服务。</p>
+                    <p class="config-text">j. 宏牛策略（宏牛策略）网站带有社交插件，该插件会告知我们您的浏览器正在查看我们的网站，并采集您的IP地址信息。如果您不希望分享这一信息，请确保您在查看我们网站之前已经退出您的社交媒体账号。</p>
+                    <p class="config-text">k. 我们的网站可能会在您的电脑上安装cookies插件，通过获知您的需求，更好地为您导览和服务。如果您不需要此插件，可以通过您的电脑设置关闭这项功能，但是功能关闭后，可能影响您在我们网站的部分体验。</p>
+                    <p class="config-text">l. 我们会尽力确保客户信息的准确性，并及时进行更新，但您有责任告知我们有关您个人信息的任何变动。</p>
+                    <p class="config-text">m. 根据1998年香港颁布的《数据保护法案》，您有权获取我们所持有的关于您个人信息的副本，以便于您告知我们信息的任何不准确之处。您可以邮件告知我们您的请求，并同时提供您的身份认证信息。此项服务我们将收取一定的费用，收费情况会在给您发送信息副本之前传达给您。按照《数据保护法案》，整个过程将耗时40天左右。</p>
+                    <p class="config-text">n. 如果用户不想再收到宏牛策略（宏牛策略）的新闻动态或推广邮件，可以随时点击邮件下方的“取消订阅”链接，自此用户将不再收到任何有关宏牛策略（宏牛策略）的邮件信息。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- 主要内容 -------------------->
+
+
+    <!---------------------尾部----------------------->
+    <section id="lk_footer" class="d-none d-md-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="footer-address col-sm-4">
+                    <h6>公司邮箱：ngoctu4864@gmail.com</h6><h6>如有任何疑问和建议，请联系客服邮箱</h6>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="footer-box row">
+                        <ul class="col-sm-2">
+                            <li class="footer-select">关于我们</li>
+                            <div class="footer-items">
+                                <li><a href='./groupIntroduction.html'>集团介绍</a></li>
+                                <li><a href='./FundSecurity.html'>资金安全</a></li>
+                                <li><a href='./tradingModel.html'>STP交易模式</a></li>
+                                <li><a href='./PolicyStatement.html'>政策申明</a></li>
+                                <li><a href='./ourAdvantage.html'>我们的优势</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">在线交易</li>
+                            <i class="h-line"></i>
+                            <div class="footer-items">
+                                <li><a href='./commonProblems.html'>常见问题</a></li>
+                                <li><a href='./TradingInstructions.html'>交易须知</a></li>
+                                <li><a href='./TheGoldInGold.html'>出入金方式</a></li>
+                                <li><a href='./RiskDisclosure.html'>风险披露</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">用户种类</li>
+                            <div class="footer-items">
+                                <li><a href='./standardUser.html'>用户种类</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">交易工具</li>
+                            <div class="footer-items">
+                                <li><a href='./TradingTools.html'>交易工具</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">客户支持</li>
+                            <div class="footer-items">
+                                <li><a href='./customerSupport.html'>商业条款</a></li>
+                                <li><a href='./PrivacyPolicy.html'>隐私政策</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rike">
+        <div class="container">
+            <div class="row">
+                <h5 class="col-xs-12 col-sm-12">风险警告:</h5>
+                <p class="col-xs-12 col-sm-12 text">
+                    所有使用配资交易的金融产品都具有高风险。它们并非适合所有投资者，您的损失可能超过您的初始投资金额。请确认您完全了解相关风险，如有需要，请寻求专业意见。</p>
+                <h5 class="col-xs-12 col-sm-12">配资交易风险披露：</h5>
+                <p class="col-xs-12 col-sm-12 text">
+                    股票配资交易是便捷快速的杠杆配资金融产品。杠杆配资需要承受高风险，因为配资既有有利的方面，也有不利的方面。因此，杠杆配资并非适合所有的投资者，因为您可能损失投入的所有资金。您不应该去冒险超过您预算之内的损失。在决定交易之前，请确保您懂得风险，还要考虑到您的投资目标和经验水平。过去的绩效并不代表未来的结果。如果必要的话可以寻求独立意见。
+                </p>
+                <p class="col-xs-12 col-sm-12">Copyright 2006 宏牛策略 Global Enterprise. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    <!---------------------/尾部----------------------->
+    <script src="./lib/js/jquery-3.3.1.js"></script>
+    <script src="./lib/js/popper.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script>
+        var tab = new TabsFn();
+        tab.init();
+    </script>
+
+    <script src='./lib/js/scrollreveal.min.js'></script>
+    <script>
+        $(function() {
+            if ($(window).width() > 768) {
+                let config = {
+                    reset: true,
+                    origin: 'top',
+                    duration: 500,
+                    delay:2
+                }
+                window.sr = ScrollReveal();
+                sr.reveal('.config-text', config, 100)
+            }
+        })
+    </script>
+
+    <script src="./lib/js/wow.min.js"></script>
+    <script>
+        $(function() {
+            let wow = new WOW({
+                boxClass: 'wow', // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset: 0, // distance to the element when triggering the animation (default is 0)
+                mobile: true, // trigger animations on mobile devices (default is true)
+            });
+            wow.init();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+/* **************交易须知******************** */
+.trading-structions{
+    padding: 80PX 0;
+}
+
+.ts-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ts-title>p{
+    font-weight: 500;
+    font-size: 17px;
+    padding: 10px 0 40px 0;
+}
+
+.ts-content{
+    border-top: 1px dashed #000;
+    padding-top: 40px;
+    font-weight: 600;
+}
+.ts-content-items{
+    font-size: 14px;
+    color:#888;
+}
+
+@media screen and (max-width:768px){
+    .ts-content-items{
+        text-indent: 2rem;
+        color:#888;
+    }
+}
+
+
+

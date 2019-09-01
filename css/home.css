@@ -1,0 +1,370 @@
+/* ****************公共样式类******************** */
+/* 01.数字样式类 */
+.num {
+    color: #eb4956;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/**************** 用户类型 *******************/
+.home-account {
+    padding: 70px 0;
+    /* background: #fff; */
+}
+
+.act-top {
+    padding: 60px 0;
+    height: 70px;
+    display: flex;
+}
+
+.act-top-right {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.act-bottom {
+    padding: 60px 0;
+}
+
+.act-bottom .act-bottom-title {
+    display: flex;
+    justify-content: center;
+}
+
+/* 配资流程 */
+.act-bottom .act-bottom-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .act-bottom .act-bottom-content {
+        margin-top: 20px;
+        background: url('../images/bt_bg.png') -205px 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .act-bottom .act-bottom-content {
+        margin: 0 auto;
+    }
+}
+
+.act-bottom .act-bottom-content>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.act-bottom .act-bottom-content>div .icon-img {
+    width: 97px;
+    height: 97px;
+    background-color: #eb4956;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.act-bottom .act-bottom-content>div .icon-text {
+    padding: 20px 0 0 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.icon-text .icon-text-title {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .icon-text div:nth-child(2) {
+        max-width: 247.5px;
+    }
+}
+
+/* .icon-text .icon-text-title .num{
+    color: #eb4956;
+    font-size: 30px;
+    font-weight: 600;
+} */
+.icon-text .icon-text-title .text {
+    font-size: 20px;
+    /* line-height: 45px; */
+    color: #000;
+    margin-left: 5px;
+}
+
+/* 按钮 */
+.act-bottom-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.act-bottom-btn .home-account-text {
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    margin: 2rem;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: .6rem 2.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+    background-color: #eb4956;
+    border: none;
+}
+
+/********************* 我们的优势 ********************/
+.home-advantage {
+    background: #ecf0f1;
+    padding: 70px 0;
+}
+
+@media screen and (min-width:768px) {
+    .advantage-item {
+        padding: 40px;
+        margin: 10px 0;
+        background-color: #fff;
+        display: flex;
+    }
+
+    .advantage-item .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .advantage-item .left>i {
+        font-size: 70px;
+        color: #eb4956;
+    }
+
+    .advantage-item .right {
+        height: 70px;
+        padding: 0 40px;
+    }
+
+    .advantage-item .right p {
+        font-size: 14px;
+        margin-top: 15px;
+        text-indent: 2rem;
+        color: #888;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .advantage-item {
+        margin: 10px 0;
+        background-color: #fff;
+    }
+
+    .advantage-item .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .advantage-item .right {
+        height: 147px;
+        /* padding: 0 40px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .advantage-item .right p {
+        font-size: 12px;
+        margin-top: 15px;
+        text-indent: 2rem;
+        color: #888;
+    }
+}
+
+
+
+/************************* 交易平台 **********************/
+.trading {
+    padding: 70px 0 140px 0;
+}
+
+@media screen and (max-width:768px) {
+    .trading {
+        padding: 70px 0;
+    }
+}
+
+.tt-content-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .tt-content-text {
+        padding: 150px 100px 100px 0;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tt-content-text {
+        height: 200px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .trading-btn {
+        max-width: 210px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .trading-btn .btn-text {
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .trading-btn {
+        max-width: 250px;
+        margin-bottom: 2rem;
+    }
+}
+
+.tt-content-img {
+    padding-top: 40px;
+    height: 400px;
+    display: flex;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .tt-content-text {
+        margin-left: 5rem;
+    }
+
+    .tt-content-img {
+        margin-left: -5rem;
+    }
+
+    .tt-content-img img:last-child {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width:768px) and (max-width:1200px){
+    .tt-content-text{
+        margin-left: 5rem;
+    }
+    .tt-content-img{
+        margin-left: -5rem;
+    }
+    .tt-content-img img:last-child{
+        display: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .trading-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .trading-text{
+        max-width: 335px;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 76px 0;
+    }
+    
+    .trading-btn{
+        max-width: 210px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .trading-btn .btn-text{
+       margin-left: 5px;
+    }
+    .trading-right img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .trading-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .trading-text{
+        max-width: 335px;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 16px 0;
+    }
+    
+    .trading-btn{
+        max-width: 280px;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .trading-right img{
+        width: 100%;
+    }
+} */
+/***********************交易品种(预留)***********************/
+
+.varieties {
+    padding: 70px 0;
+    background-color: #ecf0f1;
+}
+
+@media screen and (min-width:768px) {
+    .varieties-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .varieties-content .varieties-items {
+        width: 340px;
+        height: 278px;
+        background-color: #000;
+        margin: 30px 30px 0 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .varieties-content {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .varieties-content .varieties-items {
+        max-width: 300px;
+        height: 278px;
+        background-color: #000;
+        margin: 10px auto;
+    }
+}
+
+.varieties-content .varieties-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.varieties-content .varieties-items .varieties-items-text {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 30px;
+}

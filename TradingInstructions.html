@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/phoneTitle.css">
+    <link rel="stylesheet" href="./css/tradingInstructions.css">
+    <link rel="stylesheet" href="./lib/css/animate.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>宏牛策略</title>
+
+    <script>
+        window.jQuery || document.write('<script src="./lib/js/jquery-3.3.1.js"><\/script>')
+    </script>
+</head>
+
+<body>
+    <!-- 面板弹出框 -->
+    <section id="pop_up" style="display: none">
+        <div class="panel-shadow" id="panel_shadow"></div>
+        <div class="panel">
+            <div class="panel-top">
+                <div class="panel-title">请扫描二维码下载APP操作</div>
+                <div class="panel-img">
+                    <img id="panel_img" src="./images/download.png" alt="" width="200">
+                </div>
+            </div>
+            <div class="panel-bottom">
+                <div class="panel-btn" id="panel_btn">确定</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 弹出面板脚本 -->
+    <script>
+        $(function () {
+            $('#registered').click(function () {
+                $('#panel_img').attr('src', './images/download.png');
+                $('#pop_up').show();
+            });
+            $('#registered_1').click(function () {
+                $('#panel_img').attr('src', './images/download.png');
+                $('#pop_up').show();
+            });
+            $('#panel_shadow').click(function () {
+                $('#pop_up').hide();
+            });
+            $('#panel_btn').click(function () {
+                $('#pop_up').hide();
+            });
+            $('#iPhone').click(function () {
+                $('#panel_img').attr('src', './images/logo.png');
+                $('#pop_up').show();
+            });
+            $('#Android').click(function () {
+                $('#panel_img').attr('src', './images/logo.png');
+                $('#pop_up').show();
+            })
+        })
+    </script>
+    <!---------------------- 头部 ----------------------->
+    <header>
+        <!-- 上部分：登录注册 -->
+        <section class="d-none d-sm-none d-md-none d-lg-block mt-2 border-bottom">
+            <div class="container">
+                <div class="row text-left">
+                    <div class="col-md-6 pt-1">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+                        <span>ngoctu4864@gmail.com（服务时间：08:45 - 18:00）</span>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a id="registered" href="javascript:" class="btn btn-primary mr-2 mb-1">免费注册</a>
+                        <a href=" https://user.mailgo.com.cn/web/login" class="text-muted">立即登录</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下部分：导航条 -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-lk">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="" style="width: 60%">
+                </a>
+
+                <button class="nav-btn navbar-toggler nav-link" type="button" data-toggle="collapse"
+                    data-target="#lk_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- </div> -->
+                <div class="collapse navbar-collapse" id="lk_nav">
+                    <ul class="nav-content-items navbar-nav mr-auto">
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./index.html">首页</a>
+                        </li>
+                        <li class="click-items nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                关于我们
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./groupIntroduction.html">集团介绍</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./FundSecurity.html">资金安全</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./tradingModel.html">STP交易模型</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./PolicyStatement.html">政策申明</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./ourAdvantage.html">我们的优势</a>
+                            </div>
+                        </li>
+                        <li class="click-items nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                在线交易
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item" href="./commonProblems.html">常见问题</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./TradingInstructions.html">交易须知</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./TheGoldInGold.html">出入金方式</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./RiskDisclosure.html">风险披露</a>
+                            </div>
+                        </li>
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./standardUser.html">账户种类</a>
+                        </li>
+                        <li class="click-items nav-item">
+                            <a class="nav-link" href="./TradingTools.html">交易工具</a>
+                        </li>
+                        <li class="click-items nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                客户支持
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item" href="./customerSupport.html">商业条款</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./PrivacyPolicy.html">隐私政策</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---------------------- 头部 ----------------------->
+
+    <!--------------------- 主要内容 -------------------->
+    <!-- 图片标题 -->
+    <section>
+        <div class="banner">
+            <div class="text">
+                <h3>在线交易</h3>
+                <i class="h-line"></i>
+                <p style="text-align: center;">宏牛策略向全球投资者提供先进的在线外汇、差价合约和商品交易平台</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资金安全 -->
+    <section class="trading-structions">
+        <div class="container">
+            <div class="row">
+                <div class="ts-title col-sm-12 ScrollReveal1">
+                    <h3>交易须知</h3>
+                    <p>Trading Notice</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h6 class="ts-content col-xs-12 col-sm-12">宏牛策略交易须知：</h6>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12" style="padding-top: 20px">1、交易融资比例为1:10，即最大资金使用量为客户信用保证金（即本金）的 10 倍；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">2、每笔交易均以交易金额为准，下单即时扣除买入手续费（千分之一点五）；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">3、留仓股票最多持仓时间为 20 个工作日，节假日则顺延，到期自动平仓；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">4、留仓股票均在当日扣除交易总金额的千分之二作为当日留仓递延费； </p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">5、为控制交易之风险，个股每日涨幅或跌幅达到百分 7%，系统将停止该股新单的购买，已持有该股票则可继续持有或平仓；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">6、为控制交易之风险，当持仓股票涨幅或跌幅达到 15%，系统将会自动平仓；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">7、为控制交易之风险，当风险值（风险值=净资产/保证金）低于 30%，系统将会自动平仓所有持仓订单；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">8、为控制交易之风险，系统将根据对客户所持仓股票异动（除权、停盘等）的情况及客户保证金预留不足情况，将作出自动平仓和结算； </p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">9、若持有股票期间，该股票停牌，则系统会继续收取留仓费用，若持有股票超过留仓规定天数并且依旧未复盘，则系统会以停盘之前最后一个交易日的收盘价强制回购持有股票； </p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">10、为保证客户下单交易的及时和有效性，系统对每笔下单成交价自动默认为：建仓 （买多），均为对应市价±0.01；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">11、平仓会即时扣除卖出手续费（千分之二）和印花税（千分之二）；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12"> 12、交易时间为：交易日 9:30--11:30 13:00--14:45；</p>
+                <p class="ts-content-items sr-at-item1 col-xs-12 col-sm-12">13、出金时间：早上 9：00--下午 16：00，当日出金，5点以后，次日出金，周末不处理。</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--------------------- 主要内容 -------------------->
+
+
+    <!---------------------尾部----------------------->
+    <section id="lk_footer" class="d-none d-md-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="footer-address col-sm-4">
+                    <h6>公司邮箱：ngoctu4864@gmail.com</h6>
+                    <h6>如有任何疑问和建议，请联系客服邮箱</h6>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="footer-box row">
+                        <ul class="col-sm-2">
+                            <li class="footer-select">关于我们</li>
+                            <div class="footer-items">
+                                <li><a href='./groupIntroduction.html'>集团介绍</a></li>
+                                <li><a href='./FundSecurity.html'>资金安全</a></li>
+                                <li><a href='./tradingModel.html'>STP交易模式</a></li>
+                                <li><a href='./PolicyStatement.html'>政策申明</a></li>
+                                <li><a href='./ourAdvantage.html'>我们的优势</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">在线交易</li>
+                            <i class="h-line"></i>
+                            <div class="footer-items">
+                                <li><a href='./commonProblems.html'>常见问题</a></li>
+                                <li><a href='./TradingInstructions.html'>交易须知</a></li>
+                                <li><a href='./TheGoldInGold.html'>出入金方式</a></li>
+                                <li><a href='./RiskDisclosure.html'>风险披露</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">用户种类</li>
+                            <div class="footer-items">
+                                <li><a href='./standardUser.html'>用户种类</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">交易工具</li>
+                            <div class="footer-items">
+                                <li><a href='./TradingTools.html'>交易工具</a></li>
+                            </div>
+                        </ul>
+                        <ul class="col-sm-2">
+                            <li class="footer-select">客户支持</li>
+                            <div class="footer-items">
+                                <li><a href='./customerSupport.html'>商业条款</a></li>
+                                <li><a href='./PrivacyPolicy.html'>隐私政策</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rike">
+        <div class="container">
+            <div class="row">
+                <h5 class="col-xs-12 col-sm-12">风险警告:</h5>
+                <p class="col-xs-12 col-sm-12 text">
+                    所有使用配资交易的金融产品都具有高风险。它们并非适合所有投资者，您的损失可能超过您的初始投资金额。请确认您完全了解相关风险，如有需要，请寻求专业意见。</p>
+                <h5 class="col-xs-12 col-sm-12">配资交易风险披露：</h5>
+                <p class="col-xs-12 col-sm-12 text">
+                    股票配资交易是便捷快速的杠杆配资金融产品。杠杆配资需要承受高风险，因为配资既有有利的方面，也有不利的方面。因此，杠杆配资并非适合所有的投资者，因为您可能损失投入的所有资金。您不应该去冒险超过您预算之内的损失。在决定交易之前，请确保您懂得风险，还要考虑到您的投资目标和经验水平。过去的绩效并不代表未来的结果。如果必要的话可以寻求独立意见。
+                </p>
+                <p class="col-xs-12 col-sm-12">Copyright 2006 宏牛策略 Global Enterprise. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    <!---------------------/尾部----------------------->
+    <script src="./lib/js/jquery-3.3.1.js"></script>
+    <script src="./lib/js/popper.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <script src="./js/tab.js"></script>
+    <script>
+        var tab = new TabsFn();
+        tab.init();
+    </script>
+
+    <script src="./lib/js/scrollreveal.min.js"></script>
+    <script>
+        $(function () {
+            if ($(window).width() > 768) {
+                // 配置动画 
+                let config = {
+                    reset: true,
+                    origin: 'left',
+                    duration: 1000,
+                    delay: 0,
+                    scale: 1,
+                }
+                let configItem1 = {
+                    reset: true,
+                    origin: 'top',
+                    duration: 500,
+                    delay: 2,
+                    opacity: 0
+                }
+
+                window.sr = ScrollReveal();
+                sr.reveal('.ScrollReveal1', config);
+                sr.reveal('.sr-at-item1', configItem1, 100);
+            }
+        })
+    </script>
+</body>
+
+</html>

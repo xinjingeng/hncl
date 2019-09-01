@@ -1,0 +1,102 @@
+/* @media screen and (max-width:768px){
+    html{
+        font-size: 12px;
+    }
+} */
+/* 粉色按钮类 */
+.hn-click-btn{
+    background-color:#eb4956;
+    border: none;
+}
+
+/* 粉色背景色类 */
+.hn-color-bg{
+    background: #000;
+    border-radius: 10px;  
+}
+
+@media screen and (min-width:768px){
+    /* #lk_nav{
+        margin-left: 50px;
+    } */
+    .navbar-lk .navbar-nav{
+        display: flex;
+    }
+    .navbar-lk .navbar-nav>li{
+        /* padding: 0 5px; */
+        margin:0 5px;
+    }
+    .navbar-lk .navbar-nav>li.active>a,
+    .navbar-lk .navbar-nav>li>a:hover{
+        border-bottom: 2px solid #eb4956;
+        color: #000;
+    }
+}
+@media screen and (max-width:768px){
+    .nav-btn{
+        margin-left: -100px;
+    }
+    .nav-content-items{
+        text-align: right; 
+        /* text-align: center; */
+    }
+    .nav-content-items .dropdown-menu{
+        /* text-align: center; */
+        text-align: right;
+    }
+     .navbar-lk .navbar-nav>li.active>a,
+     .navbar-lk .navbar-nav>li>a:hover{
+        border-bottom: 2px solid #eb4956;
+        color: #000;
+    }
+}
+/* @media screen and (min-width:990px) and (max-width:1200px){
+     #lk_nav{
+        margin-left:-182px;
+    }
+} */
+
+/***************************** 弹出框 ************************/
+.panel-shadow{
+    width: 100%;
+    height: 100%;
+    background-color: #888888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.8;
+}
+.panel{
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+@media screen and (min-width:768px){
+    .panel .panel-top{
+        padding: 40px 120px 10px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px){
+    .panel .panel-top{
+        padding: 20px 60px 4px;
+        text-align: center;
+    }
+}
+.panel-title{
+    margin-bottom: 10px;
+}
+.panel-bottom .panel-btn{
+    height: 50px;
+    line-height: 50px;
+    color: #2ecc71;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+

@@ -1,0 +1,68 @@
+.trading-tools{
+    padding: 80px 0 140px 0;
+}
+@media screen and (max-width:768px) {
+    .trading-tools {
+        padding: 40px 0;
+    }
+}
+
+.tt-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #000;
+}
+
+.tt-content{
+    padding: 40px 0;
+}
+.tt-content-text{
+    display: flex;
+    flex-direction: column; 
+}
+@media screen and (min-width:768px){
+    .tt-content-text{padding:150px 100px 100px 0; justify-content: space-around;}
+}
+@media screen and (max-width:768px){
+    .tt-content-text{height: 200px;margin-top: 40px;}
+}
+
+@media screen and (min-width:768px) {
+    .trading-btn{
+        max-width: 210px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .trading-btn .btn-text{
+       margin-left: 5px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .trading-btn{
+        max-width: 250px;
+        margin-bottom: 2rem;
+    }
+}
+
+.tt-content-img{
+    padding-top: 40px;
+    height: 400px;
+    display: flex;
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .tt-content-text{
+        margin-left: 5rem;
+    }
+    .tt-content-img{
+        margin-left: -5rem;
+    }
+    .tt-content-img img:last-child{
+        display: none;
+    }
+}
